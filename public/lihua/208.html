@@ -1,0 +1,51 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>  
+    <style>  
+        * {  
+            margin: 0;  
+            padding: 0;  
+        }  
+  
+        body {  
+            background-color: grey;  
+            user-select: none;  
+        }  
+  
+        .lihua {  
+            /* 根据图片自己调节位置 */  
+            width: 400px;  
+            position: absolute;  
+            left: 50%;  
+            top: 40%;  
+            transform: translateX(-50%);  
+        }  
+    </style>  
+</head>  
+  
+<body>  
+    <img src="1.png" class="lihua">  
+    <script>  
+        const lihua = document.querySelector(".lihua")  
+        const run = () => {  
+            confetti({  
+                particleCount: 100, //粒子数量  
+                spread: 70,         //粒子速度  
+                origin: {           //初始位置  
+                    x: 0.5,  
+                    y: 0.5,  
+                }  
+            })  
+        }  
+        lihua.onclick = () => run()  
+    </script>  
+  
+</body>  
+  
+</html> 

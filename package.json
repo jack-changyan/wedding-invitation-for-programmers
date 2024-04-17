@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@amap/amap-vue": "^2.0.13",
+    "amap": "^1.0.7",
+    "canvas-confetti": "^1.9.2",
+    "leancloud-storage": "^4.15.2",
     "prismjs": "^1.24.0",
     "vue": "^2.5.17"
   },

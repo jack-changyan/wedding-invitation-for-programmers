@@ -93,7 +93,7 @@ export default {
       }
     },
     getMsgDate() {
-      const query = new AV.Query("wishDate");
+      const query = new AV.Query("zheeom_wishDate");
       query.find().then((todo) => {
         // console.log(todo[0].attributes.wishMsgDate);
         todo.forEach(item => {

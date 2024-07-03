@@ -6,10 +6,10 @@
           <div class="content-inside">
             <img class="content-inside-photo" src="../images/photo.jpg" />
             <p>📣 我们结婚啦！</p>
-            <p><b>🤵🏻 褚昌岩 & 👰🏻 魏梦晴</b></p>
-            <p>🗓：2024年5月2日</p>
+            <p><b>🤵🏻 王志红 & 👰🏻 潘俊贤</b></p>
+            <p>🗓：2024年4月26日</p>
             <p>
-              📍：荣悦台·婚礼宴会酒店<a href="https://surl.amap.com/nzZnZoY17eeB">
+              📍：安庆同庆楼-迎江区<a href="https://surl.amap.com/fQsbaQk1a17u">
                 🧭:导航</a>
             </p>
             <div class="content-inside-bless">
@@ -129,7 +129,7 @@ export default {
       // });
     },
     saveDate(wishMsgDate) {
-      const Product = AV.Object.extend("wishDate");
+      const Product = AV.Object.extend("zheeom_wishDate");
       const product = new Product();
       product.set("wishMsgDate", wishMsgDate);
       // 将对象保存到云端
